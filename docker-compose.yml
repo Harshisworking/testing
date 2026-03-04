@@ -3,7 +3,7 @@ services:
     build: ./frontend
     # No ports here; your docker-proxy.yml will handle the external port
     depends_on:
-      - backend
+      - api-server
 
   api-server:
     build: ./backend
